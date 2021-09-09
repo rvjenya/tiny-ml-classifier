@@ -1,11 +1,9 @@
 import cv2
 import numpy as np
-
 import tensorflow.lite as tflite
-
-# import tflite_runtime.interpreter as tflite
-
 from PIL import Image
+from imutils.video import FPS
+
 
 CAMERA_WIDTH = 640
 CAMERA_HEIGHT = 480
@@ -39,7 +37,7 @@ def process_image(interpreter, image, input_index, k=3):
     output_data = np.squeeze(output_data)
 
     # Get top K result
-    top_k = output_data.argsort()[-k:][::-1]  # Top_k index
+    top_k = output_data.argsort()[-k:][::-1]
     result = []
     for _id in top_k:
         score = float(output_data[_id] / 255.0)
@@ -51,9 +49,9 @@ def process_image(interpreter, image, input_index, k=3):
 def display_result(top_result, frame, labels):
     r"""Display top K result in top right corner"""
     font = cv2.FONT_HERSHEY_SIMPLEX
-    size = 0.6
-    color = (255, 0, 0)  # Blue color
-    thickness = 1
+    size = 0.8
+    color = (255, 0, 0)
+    thickness = 2
 
     for idx, (_id, score) in enumerate(top_result):
         # print('{} - {:0.4f}'.format(label, score))
@@ -69,13 +67,13 @@ def display_result(top_result, frame, labels):
             thickness,
         )
 
-    cv2.imshow("Image Classification", frame)
+    cv2.imshow("Glasses or No Glasses Classification", frame)
 
 
 if __name__ == "__main__":
 
-    model_path = "model/tflite/output/model.tflite"
-    label_path = "model/tflite/output/labels.txt"
+    model_path = "model/tflite/optimise_to_3Mb/MobileNetV2/model.tflite"
+    label_path = "model/tflite/optimise_to_3Mb/MobileNetV2/labels.txt"
 
     cap = cv2.VideoCapture(0)
     cap.set(cv2.CAP_PROP_FRAME_WIDTH, CAMERA_WIDTH)
@@ -94,20 +92,21 @@ if __name__ == "__main__":
 
     # Get input index
     input_index = input_details[0]["index"]
+    fps = FPS().start()
 
-    # Process Stream
+    # Camera Stream
     while True:
         ret, frame = cap.read()
 
-        # image = Image.fromarray(cv2.cvtColor(frame, cv2.COLOR_BGR2RGB))
-        image = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+        image = Image.fromarray(cv2.cvtColor(frame, cv2.COLOR_BGR2RGB))
+        #image = imutils.resize(image, width=width, height=height)
+        #image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
         image = image.resize((width, height))
 
         top_result = process_image(interpreter, image, input_index)
         display_result(top_result, frame, labels)
 
-        key = cv2.waitKey(1)
-        if key == 27:  # esc
+        if cv2.waitKey(1) & 0xFF == 25:
             break
 
     cap.release()

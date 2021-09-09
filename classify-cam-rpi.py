@@ -1,4 +1,4 @@
-# python3
+# For RPi and rpiCam
 
 from __future__ import absolute_import
 from __future__ import division

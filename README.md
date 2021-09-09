@@ -3,6 +3,7 @@ Tiny ML classifier - Glasses or No Glasses
 
 ![Image](https://github.com/rvjenya/tiny-ml-classifier/blob/main/doc/all_02.png)
 
+![DEMO](https://github.com/rvjenya/tiny-ml-classifier/blob/main/doc/infer-test.png)
 
 ## Todo (09.09.2021)
 
@@ -99,7 +100,7 @@ Testing classification:
 
 ### Realtime Inference
 
-![Gif](https://github.com/rvjenya/tiny-ml-classifier/blob/main/doc/ScreenRecording0.gif)
+![DEMO](https://github.com/rvjenya/tiny-ml-classifier/blob/main/doc/infer-test.png)
 
 If you need specific architecture you can use these models:
 

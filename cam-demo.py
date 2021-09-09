@@ -2,7 +2,6 @@ import cv2
 import numpy as np
 import tensorflow.lite as tflite
 from PIL import Image
-from imutils.video import FPS
 
 
 CAMERA_WIDTH = 640
@@ -92,7 +91,6 @@ if __name__ == "__main__":
 
     # Get input index
     input_index = input_details[0]["index"]
-    fps = FPS().start()
 
     # Camera Stream
     while True:

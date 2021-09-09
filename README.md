@@ -11,12 +11,12 @@ Tiny ML classifier - Glasses or No Glasses
 - [x] Pytorch or TF (as tflite)
 - [x] free skeleton model for init weights (I think it will be EfficientNet-Lite* models, MobileNetV2 or ResNet50) 
 - [x] Training Loop (Use API for convertin to Tiny models - for example .tflite)
-- [ ] Create inference demo
-- [ ] Optimised
-- [ ] Bonus ---> 
-  - [ ] Deployment for example RPi (with minimal memory - like RPi 3 with 1GB memory and without threading CPU)  
-  - [ ] Documentation on GitHub
-  - [ ] Video demonstration realtime classification
+- [x] Create inference demo
+- [x] Optimised
+- [x] Bonus ---> 
+  - [x] Deployment for example RPi (with minimal memory - like RPi 3 with 1GB memory and without threading CPU)  
+  - [x] Documentation on GitHub
+  - [x] Video demonstration realtime classification from Camera
 
 
 ## Clone Tily ML Classifier
@@ -89,3 +89,17 @@ Testing classification:
 
 ![Image of plt](https://github.com/rvjenya/tiny-ml-classifier/blob/main/doc/rvjenya-doc-git-00000.png)
 ![Image of plt](https://github.com/rvjenya/tiny-ml-classifier/blob/main/doc/rvjenya-doc-git-00002.png)
+
+### Realtime Inference
+
+If you need specific architecture you can use these models:
+
+- FP32 (Full)
+- FP16 (optimisation for GPU)
+
+```
+cd tiny-ml-classifier
+
+(venv)python
+
+```

@@ -41,6 +41,15 @@ cd tiny-ml-classifier
 
 ### Transfer and Augmentation
 
-- Tools for Augmentation data and exporting many formats[Here](roboflow.com)
+- Tools for Augmentation data and exporting many formats (roboflow.com)
 
 - From Scratch Augmentation - use [Albumentations](https://albumentations.ai/docs/)
+
+### Use TF classification notebook
+
+- Open on your PC with GPU or Colab (I've attached colab version but you can export it to your GPU env)
+
+```
+https://colab.research.google.com/drive/1hThmbqVvYiMUD5AOORX_TXjLq2XiH-DO?usp=sharing
+
+```

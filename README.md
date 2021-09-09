@@ -76,4 +76,6 @@ My result of training by 10 Epoch:
 #### Test infer
 
 Testing classification:
-![Image of plt](https://github.com/rvjenya/tiny-ml-classifier/blob/main/doc/rvjenya-doc-git-00000.png) ![Image of plt](https://github.com/rvjenya/tiny-ml-classifier/blob/main/doc/rvjenya-doc-git-00002.png)
+
+![Image of plt](https://github.com/rvjenya/tiny-ml-classifier/blob/main/doc/rvjenya-doc-git-00000.png)
+![Image of plt](https://github.com/rvjenya/tiny-ml-classifier/blob/main/doc/rvjenya-doc-git-00002.png)

@@ -99,7 +99,7 @@ Testing classification:
 
 ### Realtime Inference
 
-![](https://github.com/rvjenya/tiny-ml-classifier/blob/main/doc/ScreenRecording0.gif)
+![Gif](https://github.com/rvjenya/tiny-ml-classifier/blob/main/doc/ScreenRecording0.gif)
 
 If you need specific architecture you can use these models:
 

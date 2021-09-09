@@ -1,6 +1,9 @@
 # Tiny ML Classifier
 Tiny ML classifier - Glasses or No Glasses
 
+![Image](https://github.com/rvjenya/tiny-ml-classifier/blob/main/doc/all_02.png)
+
+
 ## Todo (09.09.2021)
 
 - [x] Create infrastructure for Git
@@ -69,8 +72,11 @@ Edit > Notebook settings or Runtime > Change runtime type and select GPU as Hard
 
 ### Training
 
-- I use **mobilenet_v2_100_224** with **Bach size = 32**
-- You can change these parameters and ReTrain your model. Just try many experiments while you will be satisfied. 
+- Done Models:
+  - **mobilenet_v2** (will be faster)
+  - **Inception_v3**
+
+For all models I've made FP16 version tflite - you can use it on GPU.
 
 #### Save TF and TFLite models
 
@@ -90,16 +96,29 @@ Testing classification:
 ![Image of plt](https://github.com/rvjenya/tiny-ml-classifier/blob/main/doc/rvjenya-doc-git-00000.png)
 ![Image of plt](https://github.com/rvjenya/tiny-ml-classifier/blob/main/doc/rvjenya-doc-git-00002.png)
 
+
 ### Realtime Inference
+
+![](https://github.com/rvjenya/tiny-ml-classifier/blob/main/doc/ScreenRecording0.gif)
 
 If you need specific architecture you can use these models:
 
 - FP32 (Full)
 - FP16 (optimisation for GPU)
 
-```
-cd tiny-ml-classifier
+#### for Realtime Camera Demo use: 
 
-(venv)python
+```
+
+(venv) python cam-demo.py
+
+```
+
+
+#### for Raspberry Pi Camera demo use
+```
+python3 classify-cam-rpi.py \
+  --model /model/tflite/optimise_to_3Mb/MobileNetV2/model.tflite \
+  --labels /model/tflite/optimise_to_3Mb/MobileNetV2/labels.txt
 
 ```

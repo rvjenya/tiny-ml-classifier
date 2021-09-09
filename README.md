@@ -9,8 +9,8 @@ Tiny ML classifier - Glasses or No Glasses
 - [x] Transfer
 - [x] Augmentation data
 - [x] Pytorch or TF (as tflite)
-- [ ] free skeleton model for init weights (I think it will be EfficientNet-Lite* models, MobileNetV2 or ResNet50) 
-- [ ] Training Loop (Use API for convertin to Tiny models - for example .tflite)
+- [x] free skeleton model for init weights (I think it will be EfficientNet-Lite* models, MobileNetV2 or ResNet50) 
+- [x] Training Loop (Use API for convertin to Tiny models - for example .tflite)
 - [ ] Create inference demo
 - [ ] Optimised
 - [ ] Bonus ---> 
@@ -61,3 +61,8 @@ Edit > Notebook settings or Runtime > Change runtime type and select GPU as Hard
 
 - I use **mobilenet_v2_100_224** with **Bach size = 32**
 - You can change these parameters and ReTrain your model. Just try many experiments while you will be satisfied. 
+
+#### Save TF and TFLite models
+
+Final models .pb and .tflite [here](/models)
+You can test my another tflite models with **number calibration** = 45 / 100 and 200

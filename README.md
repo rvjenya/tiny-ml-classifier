@@ -64,5 +64,5 @@ Edit > Notebook settings or Runtime > Change runtime type and select GPU as Hard
 
 #### Save TF and TFLite models
 
-Final models .pb and .tflite [here](/models)
-You can test my another tflite models with **number calibration** = 45 / 100 and 200
+Final models .pb and .tflite [here](models)
+You can test my another tflite models with **number calibration** = 45 / 100 and 200 (If you want, you can try it parameters in **TFLiteConverter** step)

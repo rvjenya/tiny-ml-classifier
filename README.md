@@ -69,4 +69,4 @@ You can test my another tflite models with **number calibration** = 45 / 100 and
 
 My result of training by 10 Epoch:
 
-![Image of plt](https://github.com/rvjenya/tiny-ml-classifier/tree/main/doc/rvjenya-doc-git-00001.png)
+![Image of plt](https://github.com/rvjenya/tiny-ml-classifier/blob/main/doc/rvjenya-doc-git-00001.png)

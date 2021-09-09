@@ -27,6 +27,16 @@ cd tiny-ml-classifier
 ```
 
 ## Up env
+
+Create env with Python3.7
+
+```
+python3.7 -m venv venv
+
+source venv/bin/activate
+
+```
+
 ```
 ./install.sh
 

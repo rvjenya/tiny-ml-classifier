@@ -99,14 +99,14 @@ if __name__ == "__main__":
         ret, frame = cap.read()
 
         image = Image.fromarray(cv2.cvtColor(frame, cv2.COLOR_BGR2RGB))
-        #image = imutils.resize(image, width=width, height=height)
-        #image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+        # image = imutils.resize(image, width=width, height=height)
+        # image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
         image = image.resize((width, height))
 
         top_result = process_image(interpreter, image, input_index)
         display_result(top_result, frame, labels)
 
-        if cv2.waitKey(1) & 0xFF == 25:
+        if cv2.waitKey(1) & 0xFF == 27:
             break
 
     cap.release()

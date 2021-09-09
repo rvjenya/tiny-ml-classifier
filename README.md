@@ -117,6 +117,8 @@ If you need specific architecture you can use these models:
 
 
 #### for Raspberry Pi Camera demo use
+![DEMO](https://github.com/rvjenya/tiny-ml-classifier/blob/main/doc/RPi-infer.png)
+
 ```
 python3 classify-cam-rpi.py \
   --model /model/tflite/optimise_to_3Mb/MobileNetV2/model.tflite \

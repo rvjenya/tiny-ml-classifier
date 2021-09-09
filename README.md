@@ -56,3 +56,8 @@ https://colab.research.google.com/drive/1hThmbqVvYiMUD5AOORX_TXjLq2XiH-DO?usp=sh
 ```
 #### GPU Setting
 Edit > Notebook settings or Runtime > Change runtime type and select GPU as Hardware accelerator
+
+### Training
+
+- I use **mobilenet_v2_100_224** with **Bach size = 32**
+- You can change these parameters and ReTrain your model. Just try many experiments while you will be satisfied. 

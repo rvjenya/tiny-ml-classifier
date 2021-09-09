@@ -35,12 +35,12 @@ cd tiny-ml-classifier
 
 ### Dataset
 
-- Go to [kaggle.com](kaggle.com) and download Free dataset from -
+- Go to (kaggle.com) and download Free dataset from -
 [Here](https://www.kaggle.com/jorgebuenoperez/datacleaningglassesnoglasses)
 
 
 ### Transfer and Augmentation
 
-- Tools for Augmentation data and exporting many formats[RoboFlow](roboflow.com)
+- Tools for Augmentation data and exporting many formats[Here](roboflow.com)
 
 - From Scratch Augmentation - use [Albumentations](https://albumentations.ai/docs/)

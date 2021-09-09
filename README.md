@@ -48,8 +48,11 @@ cd tiny-ml-classifier
 ### Use TF classification notebook
 
 - Open on your PC with GPU or Colab (I've attached colab version but you can export it to your GPU env)
+[![Open All Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1hThmbqVvYiMUD5AOORX_TXjLq2XiH-DO?usp=sharing)
 
 ```
 https://colab.research.google.com/drive/1hThmbqVvYiMUD5AOORX_TXjLq2XiH-DO?usp=sharing
 
 ```
+#### GPU Setting
+Edit > Notebook settings or Runtime > Change runtime type and select GPU as Hardware accelerator

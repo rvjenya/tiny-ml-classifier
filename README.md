@@ -66,3 +66,7 @@ Edit > Notebook settings or Runtime > Change runtime type and select GPU as Hard
 
 Final models .pb and .tflite [here](https://github.com/rvjenya/tiny-ml-classifier/tree/main/model)
 You can test my another tflite models with **number calibration** = 45 / 100 and 200 (If you want, you can try it parameters in **TFLiteConverter** step)
+
+My result of training by 10 Epoch:
+
+![Image of plt](https://github.com/rvjenya/tiny-ml-classifier/tree/main/doc/rvjenya-doc-git-00001.png)

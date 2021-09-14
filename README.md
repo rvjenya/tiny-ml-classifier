@@ -23,7 +23,7 @@ Tiny ML classifier - Glasses or No Glasses
   - [x] Video demonstration realtime classification from Camera
 
 
-## Clone Tily ML Classifier
+## Clone Tiny ML Classifier
 ```
 git clone https://github.com/rvjenya/tiny-ml-classifier.git
 or use ssh - git@github.com:rvjenya/tiny-ml-classifier.git
